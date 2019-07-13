@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MovieLibrary.DataAccessLayer.Context;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace MoviesLibrary.WebApi
@@ -25,6 +27,8 @@ namespace MoviesLibrary.WebApi
             {
                 c.SwaggerDoc("v1", new Info { Title = "Movie Library API", Version = "v1" });
             });
+
+            services.AddDbContext<MovieContext>(o => o.UseCosmos(Configuration["CosmosDBSetting:DbUri"], Configuration["CosmosDBSetting:PrimaryKey"], "DBNAMETOUPDATE"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
