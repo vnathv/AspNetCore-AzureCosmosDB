@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MovieLibrary.DomainModel
@@ -7,7 +8,7 @@ namespace MovieLibrary.DomainModel
     public class Movie
     {
         [Key]
-        public int Id { get; set; }
+        public Guid MovieId { get; set; } = Guid.NewGuid();
 
         public string Name { get; set; }
 

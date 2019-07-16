@@ -7,13 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoviesLibrary.WebApi", "Mov
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieLibrary.Provider", "MovieLibrary.Provider\MovieLibrary.Provider.csproj", "{D95CA77C-252D-45D0-A298-93E2086F514A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLibrary.DomainModel", "MovieLibrary.DomainModel\MovieLibrary.DomainModel.csproj", "{411A1021-1379-4A65-9571-2357E2BF7948}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieLibrary.DomainModel", "MovieLibrary.DomainModel\MovieLibrary.DomainModel.csproj", "{411A1021-1379-4A65-9571-2357E2BF7948}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLibrary.DtoContracts", "MovieLibrary.DtoContracts\MovieLibrary.DtoContracts.csproj", "{9EC44D63-A934-45B1-A219-754A330915EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieLibrary.DtoContracts", "MovieLibrary.DtoContracts\MovieLibrary.DtoContracts.csproj", "{9EC44D63-A934-45B1-A219-754A330915EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLibrary.ClientContract", "MovieLibrary.ClientContract\MovieLibrary.ClientContract.csproj", "{19259732-FE62-4222-B64C-1489178DB013}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieLibrary.ClientContract", "MovieLibrary.ClientContract\MovieLibrary.ClientContract.csproj", "{19259732-FE62-4222-B64C-1489178DB013}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLibrary.DataAccessLayer", "MovieLibrary.DataAccessLayer\MovieLibrary.DataAccessLayer.csproj", "{C81E0579-EE50-46EF-BFFD-02319B95A2D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieLibrary.DataAccessLayer", "MovieLibrary.DataAccessLayer\MovieLibrary.DataAccessLayer.csproj", "{C81E0579-EE50-46EF-BFFD-02319B95A2D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLibrary.Automapper", "MovieLibrary.Automapper\MovieLibrary.Automapper.csproj", "{317810C8-A6A4-458A-A1BA-0F3C9166393B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLibrary.IntegrationTests", "MovieLibrary.IntegrationTests\MovieLibrary.IntegrationTests.csproj", "{19D582CA-2B8E-4E33-8319-7D682B6D8BC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{C81E0579-EE50-46EF-BFFD-02319B95A2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C81E0579-EE50-46EF-BFFD-02319B95A2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C81E0579-EE50-46EF-BFFD-02319B95A2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317810C8-A6A4-458A-A1BA-0F3C9166393B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317810C8-A6A4-458A-A1BA-0F3C9166393B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317810C8-A6A4-458A-A1BA-0F3C9166393B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317810C8-A6A4-458A-A1BA-0F3C9166393B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D582CA-2B8E-4E33-8319-7D682B6D8BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D582CA-2B8E-4E33-8319-7D682B6D8BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D582CA-2B8E-4E33-8319-7D682B6D8BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D582CA-2B8E-4E33-8319-7D682B6D8BC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

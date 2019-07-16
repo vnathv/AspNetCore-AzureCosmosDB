@@ -1,7 +1,10 @@
-﻿namespace MovieLibrary.Provider.Abstractions
+﻿using MovieLibrary.DomainModel;
+using MovieLibrary.DtoContracts;
+
+namespace MovieLibrary.Provider.Abstractions
 {
     public interface IMovieProvider
     {
-        void SaveMovies();
+        void SaveMovie(MovieDto movie);
     }
 }
